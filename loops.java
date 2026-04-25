@@ -1,5 +1,7 @@
+
 public class loops {
     public static void main(String[] args) {
+        // Nested while loop
         int i=1;
         while(i<=4){
             System.out.println("hii" + i);
