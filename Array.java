@@ -1,14 +1,35 @@
+class student{
+        int rollno;
+        String name;
+        int marks;
+    }
+
 public class Array {
+    
+
     public static void main (String args[]) {
-        int array[] = new int[5];
-        array[0] = 1;
-        array[1] = 2;
-        array[2] = 3;
-        array[3] = 4;
-        array[4] = 5;
-        for(int i=0;i<=4;i++){
-            System.out.println(array[i]);
+        student s1 = new student();
+        s1.rollno = 1;
+        s1.name = "John";
+        s1.marks = 85;
+
+        student s2 = new student();
+        s2.rollno = 2;
+        s2.name ="Arun";
+        s2.marks = 99;
+
+        student s3 = new student();
+        s3.rollno =3;
+        s3.name = "Kannan";
+        s3.marks = 90;
+
+        student students [] = new student [3];
+        students[0] = s1;  
+        students[1] = s2;
+        students[2] = s3;     
+
+        for (student s : students){
+            System.out.println(s.rollno + " " + s.name + " " + s.marks);
         }
-       
     }
 }
